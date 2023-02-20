@@ -1,0 +1,44 @@
+{
+	"name": "meetmax-client",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"dev:phone": "cross-env NEXT_PUBLIC_BACKEND_URL=http://192.168.100.10:3001 react-scripts start",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.10.5",
+		"@mantine/core": "^5.10.0",
+		"@mantine/hooks": "^5.10.0",
+		"@next/font": "13.1.1",
+		"@tabler/icons": "^1.119.0",
+		"@tanstack/react-query": "^4.20.4",
+		"@tanstack/react-query-devtools": "^4.20.4",
+		"@types/multer": "^1.4.7",
+		"@types/node": "18.11.18",
+		"@types/react": "18.0.26",
+		"@types/react-datepicker": "^4.8.0",
+		"@types/react-dom": "18.0.10",
+		"axios": "^1.2.1",
+		"cross-env": "^7.0.3",
+		"date-fns": "^2.29.3",
+		"eslint": "8.30.0",
+		"eslint-config-next": "13.1.1",
+		"formik": "^2.2.9",
+		"next": "13.1.1",
+		"react": "18.2.0",
+		"react-datepicker": "^4.8.0",
+		"react-dom": "18.2.0",
+		"react-spinners": "^0.13.7",
+		"typescript": "4.9.4",
+		"yup": "^0.32.11"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.13",
+		"postcss": "^8.4.20",
+		"tailwindcss": "^3.2.4"
+	}
+}
