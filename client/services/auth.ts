@@ -12,7 +12,7 @@ export const loginUser = async (values: {
 	} catch (error: any) {
 		console.log("error: ", error);
 
-		throw new Error(error);
+		throw new Error(error.response.data.msg);
 	}
 };
 

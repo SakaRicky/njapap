@@ -25,31 +25,31 @@ authRouter.get(
 	})
 );
 
-authRouter.get(
-	"/facebook",
-	passport.authenticate("facebook", { scope: ["profile", "email"] })
-);
+// authRouter.get(
+// 	"/facebook",
+// 	passport.authenticate("facebook", { scope: ["profile", "email"] })
+// );
 
-authRouter.get(
-	"/facebook/callback",
-	passport.authenticate("facebook", {
-		failureRedirect: errorLoginUrl,
-		successRedirect: successLoginUrl
-	})
-);
+// authRouter.get(
+// 	"/facebook/callback",
+// 	passport.authenticate("facebook", {
+// 		failureRedirect: errorLoginUrl,
+// 		successRedirect: successLoginUrl
+// 	})
+// );
 
-authRouter.get(
-	"/linkedin",
-	passport.authenticate("linkedin", { scope: ["profile", "email"] })
-);
+// authRouter.get(
+// 	"/linkedin",
+// 	passport.authenticate("linkedin", { scope: ["profile", "email"] })
+// );
 
-authRouter.get(
-	"/linkedin/callback",
-	passport.authenticate("linkedin", {
-		failureRedirect: errorLoginUrl,
-		successRedirect: successLoginUrl
-	})
-);
+// authRouter.get(
+// 	"/linkedin/callback",
+// 	passport.authenticate("linkedin", {
+// 		failureRedirect: errorLoginUrl,
+// 		successRedirect: successLoginUrl
+// 	})
+// );
 
 authRouter.get("/getuser", async (req, res) => {
 	console.log("req.user ID in user/get", req.user);
